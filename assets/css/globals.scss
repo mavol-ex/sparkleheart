@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Montserratt";
+  src: url("/assets/font/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("/assets/font/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --fm-montserratt: "Montserratt", sans-serif;
+  --fm-oswald: "Oswald", sans-serif;
+}
+
+$theme-colors: (
+  "primary": #ffa800,
+  "primary-1": #ffcb66,
+  "secondary": #060606,
+  "secondary-1": #2f4858,
+);
+
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer * 1,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: 35px,
+  12: 80px,
+  13: 128px,
+  14: 150px,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  md: 576px,
+  lg: 760px,
+  xl: 1200px,
+);
+
+$container-max-widths: (
+  xl: 1260px,
+);
+
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+);
+
+$font-family-base: var(--fm-montserratt);
+
+$font-size-base: 1rem;
+
+$font-sizes: (
+  1: 4rem,
+  2: 2.5rem,
+  3: 2rem,
+  4: 1.5rem,
+  5: 1.17rem,
+  6: 1rem,
+);
+
+$navbar-light-color: var(--bs-secondary);
+$navbar-light-hover-color: var(--bs-secondary);
+$navbar-light-active-color: var(--bs-secondary);
+
+.fm-oswald {
+  font-family: var(--fm-oswald);
+}
+
+// Inputs
+$input-btn-padding-y: 0.55rem;
+$input-btn-padding-x: 1rem;
+$input-btn-font-size: 1.5rem;
+
+$input-btn-font-size-sm: 1rem;
+
+$input-placeholder-color: var(--bs-secondary-1);
+$input-bg: rgba(196, 196, 196, 0.4);
+
+// Checkbox
+$form-check-input-width: 1.33em;
+
+// Button padding: 16px 69px;
+$btn-color: #fff !important;
+$btn-padding-y: 11px;
+$btn-padding-x: 60px;
+$btn-font-size: 2rem;
+$btn-border-radius: 4rem;
+$btn-border-radius-sm: 2rem;
+$btn-border-radius-lg: 2rem;
+
+// Modal
+$modal-header-border-width: 0;
+
+@import "bootstrap/scss/bootstrap";
